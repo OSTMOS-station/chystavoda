@@ -1,0 +1,55 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #004080;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    background: #003366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    max-width: 600px;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.description {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+}
+form button {
+    padding: 0.5em 1em;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
