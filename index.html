@@ -1,165 +1,183 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chystavoda</title>
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <meta name="description" content="Професійне встановлення, налаштування та обслуговування станцій зворотного осмосу для дому та бізнесу.">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "chystavoda",
-      "url": "https://yourdomain.com",
-      "logo": "https://yourdomain.com/img/logo.png",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+380999524449",
-        "contactType": "Customer Service",
-        "email": "aleksandrov.illa@ukr.net"
-      }]
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>chystavoda</title>
+  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #74d0f1, #015c94);
+      color: white;
     }
-    </script>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #74d0f1, #015c94);
-            color: white;
-        }
-        header {
-            display: flex;
-            justify-content: space-around;
-            background: #002b55;
-            padding: 1em;
-        }
-        header a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 2em;
-        }
-        .circle {
-            width: 100px;
-            height: 100px;
-            background: url('img/logo.png') center/cover no-repeat;
-            border-radius: 50%;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 1em;
-        }
-        .intro {
-            margin-bottom: 2em;
-        }
-        .intro h1 {
-            display: inline;
-            color: white;
-            font-size: 1.5em;
-        }
-        .photos {
-            display: flex;
-            gap: 1em;
-            flex-wrap: wrap;
-            margin: 2em 0;
-        }
-        .photos img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            background: #002b55;
-            padding: 1em;
-        }
-        .form-section {
-            background: #002b55;
-            padding: 1em;
-            margin: 2em 0;
-        }
-        .form-section h3 {
-            margin-top: 0;
-        }
-        form input, form textarea, form select, form button {
-            display: block;
-            width: 100%;
-            margin: 0.5em 0;
-            padding: 0.5em;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background: #002b55;
-            color: white;
-        }
-    </style>
+
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #002b55;
+      padding: 1em;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .branding img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 2em;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+
+    .logo-circle {
+      width: 100px;
+      height: 100px;
+      background-color: #002b55;
+      border-radius: 50%;
+      background-image: url('logo.jpg');
+      background-size: cover;
+      background-position: center;
+      margin-right: 1em;
+    }
+
+    .intro h1 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin: 2em 0;
+    }
+
+    .photos img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      background: #002b55;
+      padding: 1em;
+      border-radius: 12px;
+    }
+
+    .form-section {
+      background: #002b55;
+      padding: 1em;
+      margin: 2em 0;
+    }
+
+    .form-section h3 {
+      margin-top: 0;
+    }
+
+    form input,
+    form textarea,
+    form select,
+    form button {
+      display: block;
+      width: 100%;
+      margin: 0.5em 0;
+      padding: 0.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #002b55;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="#contacts">КОНТАКТИ</a>
-        <a href="#montazh">МОНТАЖ ТА ПОСЛУГИ</a>
-        <a href="#consult">КОНСУЛЬТАТИВНІ ПОСЛУГИ</a>
-    </header>
+  <header>
+    <div class="branding">
+      <img src="logo.jpg" alt="Логотип" />
+      <span style="font-weight: bold;">chystavoda</span>
+    </div>
+    <nav>
+      <a href="#contacts">КОНТАКТИ</a>
+      <a href="#montazh">МОНТАЖ ТА ПОСЛУГИ</a>
+      <a href="#consult">КОНСУЛЬТАТИВНІ ПОСЛУГИ</a>
+    </nav>
+  </header>
 
-    <div class="container">
-        <div class="intro">
-            <div class="circle"></div>
-            <h1>chystavoda</h1>
-            <p>
-                Александров Ілля Олександрович<br>
-                Надаю професійні послуги з встановлення, налаштування та обслуговування станцій зворотного осмосу для дому, офісів і бізнесу...
-                <br>Використовую тільки якісні матеріали та перевірене обладнання. Гарантую високу якість робіт, швидкий виїзд та індивідуальний підхід.
-            </p>
-        </div>
-
-        <div class="photos">
-            <img src="img/1.jpg" alt="Фото з Вайбера 1">
-            <img src="img/2.jpg" alt="Фото з Вайбера 2">
-            <img src="img/3.jpg" alt="Фото з Вайбера 3">
-        </div>
-
-        <div id="contacts" class="form-section">
-            <h3>Контакти</h3>
-            <p>Телефон: <a href="tel:+380999524449" style="color:white;">0999524449</a></p>
-            <p>Email: <a href="mailto:aleksandrov.illa@ukr.net" style="color:white;">aleksandrov.illa@ukr.net</a></p>
-            <p>Telegram: <a href="https://t.me/aleksandrov_illa" target="_blank" style="color:white;">@aleksandrov_illa</a></p>
-        </div>
-
-        <div id="montazh" class="form-section">
-            <h3>Монтаж та послуги</h3>
-            <form action="send.php" method="post">
-                <input type="text" name="name" placeholder="Ваше ім'я" required>
-                <input type="email" name="email" placeholder="Ваш Email" required>
-                <input list="cities" name="city" placeholder="Ваше місто" required>
-                <datalist id="cities">
-                    <option value="Київ">
-                    <option value="Харків">
-                    <option value="Львів">
-                    <option value="Дніпро">
-                    <option value="Одеса">
-                    <option value="Запоріжжя">
-                    <option value="Кривий Ріг">
-                    <option value="Нікополь">
-                    <option value="Інше">
-                </datalist>
-                <textarea name="filter_type" rows="3" placeholder="Тип фільтра"></textarea>
-                <button type="submit">Надіслати</button>
-            </form>
-        </div>
-
-        <div id="consult" class="form-section">
-            <h3>Консультативні послуги</h3>
-            <form action="send.php" method="post">
-                <input type="text" name="name" placeholder="Ваше ім'я" required>
-                <input type="email" name="email" placeholder="Ваш Email" required>
-                <textarea name="problem" rows="4" placeholder="Опишіть проблему" required></textarea>
-                <button type="submit">Надіслати</button>
-            </form>
-        </div>
+  <div class="container">
+    <div class="intro">
+      <div class="logo-circle"></div>
+      <div>
+        <h1>chystavoda</h1>
+        <p>
+          Александров Ілля Олександрович<br />
+          Надаю професійні послуги з встановлення, налаштування та обслуговування станцій зворотного осмосу для дому, офісів і бізнесу...
+          <br />Використовую тільки якісні матеріали та перевірене обладнання. Гарантую високу якість робіт, швидкий виїзд та індивідуальний підхід.
+        </p>
+      </div>
     </div>
 
-    <footer>
-        &copy; 2025 Чиста Вода. Всі права захищені.
-    </footer>
+    <div class="photos">
+      <img src="img/1.jpg" alt="Фото 1" />
+      <img src="img/2.jpg" alt="Фото 2" />
+      <img src="logo.jpg" alt="Фото 3" />
+    </div>
+
+    <div id="contacts" class="form-section">
+      <h3>Контакти</h3>
+      <p>Телефон: <a href="tel:+380999524449" style="color:white;">0999524449</a></p>
+      <p>Email: <a href="mailto:aleksandrov.illa@ukr.net" style="color:white;">aleksandrov.illa@ukr.net</a></p>
+      <p>Telegram: <a href="https://t.me/aleksandrov_illa" target="_blank" style="color:white;">@aleksandrov_illa</a></p>
+    </div>
+
+    <div id="montazh" class="form-section">
+      <h3>Монтаж та послуги</h3>
+      <form action="send.php" method="post">
+        <input type="text" name="name" placeholder="Ваше ім'я" required />
+        <input type="email" name="email" placeholder="Ваш Email" required />
+        <select name="city" required>
+          <option value="">Оберіть місто</option>
+          <option value="Дніпро">Дніпро</option>
+          <option value="Кривий Ріг">Кривий Ріг</option>
+          <option value="Запоріжжя">Запоріжжя</option>
+          <option value="Інше">Інше</option>
+        </select>
+        <textarea name="filter_type" rows="3" placeholder="Тип фільтра"></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+
+    <div id="consult" class="form-section">
+      <h3>Консультативні послуги</h3>
+      <form action="send.php" method="post">
+        <input type="text" name="name" placeholder="Ваше ім'я" required />
+        <input type="email" name="email" placeholder="Ваш Email" required />
+        <textarea name="problem" rows="4" placeholder="Опишіть проблему" required></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Чиста Вода. Всі права захищені.
+  </footer>
 </body>
 </html>
