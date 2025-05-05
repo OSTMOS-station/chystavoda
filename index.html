@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chystavoda</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <meta name="description" content="Професійне встановлення, налаштування та обслуговування станцій зворотного осмосу для дому та бізнесу.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "chystavoda",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/img/logo.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+380999524449",
+        "contactType": "Customer Service",
+        "email": "aleksandrov.illa@ukr.net"
+      }]
+    }
+    </script>
     <style>
         body {
             margin: 0;
@@ -28,7 +45,7 @@
         .circle {
             width: 100px;
             height: 100px;
-            background: #002b55;
+            background: url('img/logo.png') center/cover no-repeat;
             border-radius: 50%;
             display: inline-block;
             vertical-align: middle;
@@ -45,11 +62,12 @@
         .photos {
             display: flex;
             gap: 1em;
+            flex-wrap: wrap;
             margin: 2em 0;
         }
         .photos img {
             width: 100%;
-            max-width: 400px;
+            max-width: 300px;
             height: auto;
             background: #002b55;
             padding: 1em;
@@ -97,6 +115,7 @@
         <div class="photos">
             <img src="img/1.jpg" alt="Фото з Вайбера 1">
             <img src="img/2.jpg" alt="Фото з Вайбера 2">
+            <img src="img/3.jpg" alt="Фото з Вайбера 3">
         </div>
 
         <div id="contacts" class="form-section">
@@ -111,13 +130,18 @@
             <form action="send.php" method="post">
                 <input type="text" name="name" placeholder="Ваше ім'я" required>
                 <input type="email" name="email" placeholder="Ваш Email" required>
-                <select name="city" required>
-                    <option value="">Оберіть місто</option>
-                    <option value="Дніпро">Дніпро</option>
-                    <option value="Кривий Ріг">Кривий Ріг</option>
-                    <option value="Запоріжжя">Запоріжжя</option>
-                    <option value="Інше">Інше</option>
-                </select>
+                <input list="cities" name="city" placeholder="Ваше місто" required>
+                <datalist id="cities">
+                    <option value="Київ">
+                    <option value="Харків">
+                    <option value="Львів">
+                    <option value="Дніпро">
+                    <option value="Одеса">
+                    <option value="Запоріжжя">
+                    <option value="Кривий Ріг">
+                    <option value="Нікополь">
+                    <option value="Інше">
+                </datalist>
                 <textarea name="filter_type" rows="3" placeholder="Тип фільтра"></textarea>
                 <button type="submit">Надіслати</button>
             </form>
