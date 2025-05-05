@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://chystavoda.tech/sitemap.xml
