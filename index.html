@@ -2,182 +2,87 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>chystavoda</title>
-  <link rel="icon" href="logo.jpg" type="image/jpeg" />
+  <link rel="icon" type="image/png" href="img/logo.jpg" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #74d0f1, #015c94);
-      color: white;
+      background: linear-gradient(to bottom, #6dd5fa, #2193b0);
+      color: #fff;
     }
 
     header {
       display: flex;
-      justify-content: space-around;
       align-items: center;
-      background: #002b55;
       padding: 1em;
     }
 
-    header a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .branding {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .branding img {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
-
-    .container {
-      padding: 2em;
-    }
-
-    .intro {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2em;
-    }
-
-    .logo-circle {
-      width: 100px;
-      height: 100px;
-      background-color: #002b55;
-      border-radius: 50%;
-      background-image: url('logo.jpg');
-      background-size: cover;
-      background-position: center;
-      margin-right: 1em;
-    }
-
-    .intro h1 {
-      font-size: 1.5em;
-      margin: 0;
+    header img {
+      height: 50px;
+      margin-right: 10px;
     }
 
     .photos {
       display: flex;
       justify-content: center;
-      gap: 1em;
-      margin: 2em 0;
+      gap: 2em;
+      padding: 2em 0;
     }
 
     .photos img {
-      width: 100%;
-      max-width: 300px;
+      width: 250px;
       height: auto;
-      background: #002b55;
-      padding: 1em;
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     .form-section {
       background: #002b55;
       padding: 1em;
-      margin: 2em 0;
+      margin-top: 4em;
+      margin-bottom: 2em;
+      border-radius: 8px;
     }
 
-    .form-section h3 {
-      margin-top: 0;
-    }
-
-    form input,
-    form textarea,
-    form select,
-    form button {
-      display: block;
-      width: 100%;
-      margin: 0.5em 0;
-      padding: 0.5em;
-    }
-
-    footer {
+    .form-section h2 {
       text-align: center;
-      padding: 1em;
-      background: #002b55;
-      color: white;
+      margin-bottom: 0.5em;
+    }
+
+    .form-section p {
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="branding">
-      <img src="logo.jpg" alt="Логотип" />
-      <span style="font-weight: bold;">chystavoda</span>
-    </div>
-    <nav>
-      <a href="#contacts">КОНТАКТИ</a>
-      <a href="#montazh">МОНТАЖ ТА ПОСЛУГИ</a>
-      <a href="#consult">КОНСУЛЬТАТИВНІ ПОСЛУГИ</a>
-    </nav>
+    <img src="img/logo.jpg" alt="Логотип" />
+    <h1>chystavoda</h1>
   </header>
 
-  <div class="container">
-    <div class="intro">
-      <div class="logo-circle"></div>
-      <div>
-        <h1>chystavoda</h1>
-        <p>
-          Александров Ілля Олександрович<br />
-          Надаю професійні послуги з встановлення, налаштування та обслуговування станцій зворотного осмосу для дому, офісів і бізнесу...
-          <br />Використовую тільки якісні матеріали та перевірене обладнання. Гарантую високу якість робіт, швидкий виїзд та індивідуальний підхід.
-        </p>
-      </div>
-    </div>
-
-    <div class="photos">
-      <img src="img/1.jpg" alt="Фото 1" />
-      <img src="img/2.jpg" alt="Фото 2" />
-      <img src="logo.jpg" alt="Фото 3" />
-    </div>
-
-    <div id="contacts" class="form-section">
-      <h3>Контакти</h3>
-      <p>Телефон: <a href="tel:+380999524449" style="color:white;">0999524449</a></p>
-      <p>Email: <a href="mailto:aleksandrov.illa@ukr.net" style="color:white;">aleksandrov.illa@ukr.net</a></p>
-      <p>Telegram: <a href="https://t.me/aleksandrov_illa" target="_blank" style="color:white;">@aleksandrov_illa</a></p>
-    </div>
-
-    <div id="montazh" class="form-section">
-      <h3>Монтаж та послуги</h3>
-      <form action="send.php" method="post">
-        <input type="text" name="name" placeholder="Ваше ім'я" required />
-        <input type="email" name="email" placeholder="Ваш Email" required />
-        <select name="city" required>
-          <option value="">Оберіть місто</option>
-          <option value="Дніпро">Дніпро</option>
-          <option value="Кривий Ріг">Кривий Ріг</option>
-          <option value="Запоріжжя">Запоріжжя</option>
-          <option value="Інше">Інше</option>
-        </select>
-        <textarea name="filter_type" rows="3" placeholder="Тип фільтра"></textarea>
-        <button type="submit">Надіслати</button>
-      </form>
-    </div>
-
-    <div id="consult" class="form-section">
-      <h3>Консультативні послуги</h3>
-      <form action="send.php" method="post">
-        <input type="text" name="name" placeholder="Ваше ім'я" required />
-        <input type="email" name="email" placeholder="Ваш Email" required />
-        <textarea name="problem" rows="4" placeholder="Опишіть проблему" required></textarea>
-        <button type="submit">Надіслати</button>
-      </form>
-    </div>
+  <div class="photos">
+    <img src="img/1.jpg" alt="Фото 1" />
+    <img src="img/2.jpg" alt="Фото 2" />
+    <img src="img/filters.jpg" alt="Фото з фільтрами" />
   </div>
 
-  <footer>
-    &copy; 2025 Чиста Вода. Всі права захищені.
-  </footer>
+  <section class="form-section">
+    <h2>Контакти</h2>
+    <p>Зв'яжіться з нами: +380 XX XXX XXXX</p>
+  </section>
+
+  <section class="form-section">
+    <h2>Монтаж та послуги</h2>
+    <p>Ми надаємо професійний монтаж систем очищення води по всій території.</p>
+  </section>
+
+  <section class="form-section">
+    <h2>Консультаційні послуги</h2>
+    <p>Проконсультуємо вас щодо вибору обладнання, виходячи з ваших потреб.</p>
+  </section>
 </body>
 </html>
